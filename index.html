@@ -9,9 +9,7 @@
 <script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
 <style>
 :root{--bg:#050507;--surface:rgba(255,255,255,0.03);--border:rgba(255,255,255,0.06);--text:#e4e4e7;--muted:#71717a;--accent:#a78bfa;--accent-bright:#c4b5fd;--gradient:linear-gradient(135deg,#8b5cf6,#6d28d9)}*{margin:0;padding:0;box-sizing:border-box}::selection{background:rgba(139,92,246,0.35);color:#fff}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:128px}.glow{position:fixed;pointer-events:none;z-index:0;border-radius:50%;filter:blur(80px)}.glow-1{top:-20%;right:-10%;width:600px;height:600px;background:rgba(139,92,246,0.06)}.glow-2{bottom:-20%;left:-10%;width:500px;height:500px;background:rgba(99,102,241,0.04)}.wrap{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:0 20px}.view{display:none;opacity:0}.view.active{display:block;animation:viewIn .4s ease forwards}@keyframes viewIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid var(--border)}.logo{display:flex;align-items:center;gap:10px;cursor:pointer;text-decoration:none;color:#fff}.logo-mark{width:30px;height:30px;border-radius:7px;background:var(--gradient);display:grid;place-items:center;font:800 11px/1 'JetBrains Mono',monospace;letter-spacing:-0.5px}.logo-text{font-weight:700;font-size:15px;letter-spacing:-0.3px}
-.nav-links{display:flex;gap:8px}.nav-link{color:#d4d4d8;text-decoration:none;font-size:13px;font-weight:600;transition:all .2s;cursor:pointer;padding:8px 14px;border-radius:8px;border:1px solid transparent;display:flex;align-items:center;gap:6px}.nav-link:hover{color:#fff;background:rgba(255,255,255,0.05);border-color:var(--border)}.nav-link svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.back-link{color:var(--muted);text-decoration:none;font-size:13px;font-weight:500;cursor:pointer;transition:color .2s}.back-link:hover{color:#fff}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid var(--border)}.logo{display:flex;align-items:center;gap:10px;cursor:pointer;text-decoration:none;color:#fff}.logo-mark{width:30px;height:30px;border-radius:7px;background:var(--gradient);display:grid;place-items:center;font:800 11px/1 'JetBrains Mono',monospace;letter-spacing:-0.5px}.logo-text{font-weight:700;font-size:15px;letter-spacing:-0.3px}.nav-links{display:flex;gap:8px}.nav-link{color:#d4d4d8;text-decoration:none;font-size:13px;font-weight:600;transition:all .2s;cursor:pointer;padding:8px 14px;border-radius:8px;border:1px solid transparent;display:flex;align-items:center;gap:6px}.nav-link:hover{color:#fff;background:rgba(255,255,255,0.05);border-color:var(--border)}.nav-link svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.back-link{color:var(--muted);text-decoration:none;font-size:13px;font-weight:500;cursor:pointer;transition:color .2s}.back-link:hover{color:#fff}
 .hero{text-align:center;padding:64px 0 20px}.status-pill{display:inline-flex;align-items:center;gap:8px;padding:4px 14px 4px 10px;border-radius:100px;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.15);font-size:11px;color:#4ade80;font-weight:500;margin-bottom:24px}.status-dot{width:6px;height:6px;border-radius:50%;background:#4ade80;box-shadow:0 0 8px rgba(34,197,94,0.6);animation:dotPulse 2s ease infinite}@keyframes dotPulse{0%,100%{opacity:1}50%{opacity:0.4}}.hero-title{font-size:clamp(36px,6vw,64px);font-weight:800;line-height:1.0;letter-spacing:-2px;margin-bottom:14px;color:#fff}.hero-title .accent{background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.hero-sub{font-size:15px;color:var(--muted);max-width:380px;margin:0 auto;line-height:1.6;font-weight:300}
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:36px 0;background:var(--border);border-radius:14px;overflow:hidden}.feat{background:var(--bg);padding:20px;display:flex;flex-direction:column;gap:6px;transition:background .25s}.feat:hover{background:rgba(139,92,246,0.03)}.feat-icon{font-size:18px}.feat-label{font-size:12px;font-weight:600;color:#fff}.feat-desc{font-size:11px;color:var(--muted)}
 .card-wrap{max-width:440px;margin:0 auto 48px}.card{border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid var(--border);position:relative}.card-glow{position:absolute;top:0;left:50%;transform:translateX(-50%);width:200px;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent)}.card-body{padding:32px 28px 28px}.card-tag{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:500;color:var(--accent);text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;text-align:center}
@@ -22,11 +20,10 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0
 .btn-buy{width:100%;padding:14px;font-size:14px;font-weight:600;color:#fff;background:var(--gradient);border:none;border-radius:10px;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .25s;position:relative;overflow:hidden}.btn-buy::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,0.1) 50%,transparent 60%);background-size:300% 100%;animation:btnSheen 4s ease infinite}@keyframes btnSheen{0%{background-position:200% 0}100%{background-position:-200% 0}}.btn-buy:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(139,92,246,0.3)}.btn-buy:disabled{opacity:0.4;cursor:not-allowed;transform:none;box-shadow:none}
 .stock-error{text-align:center;font-size:12px;color:#f87171;margin-top:8px;display:none}.card-footer{text-align:center;font-size:11px;color:#52525b;margin-top:12px}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:48px}.step{text-align:center;padding:16px 8px;border-radius:10px;background:var(--surface);border:1px solid var(--border)}.step-n{font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:500;color:rgba(139,92,246,0.2);margin-bottom:6px}.step-t{font-size:12px;font-weight:600;color:#fff;margin-bottom:2px}.step-d{font-size:11px;color:var(--muted)}
-.reviews-section{max-width:520px;margin:0 auto 48px}.review-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:10px}.review-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.review-user{display:flex;align-items:center;gap:10px}.review-avatar{width:28px;height:28px;border-radius:50%;background:rgba(139,92,246,0.15);display:grid;place-items:center;font-size:11px;font-weight:700;color:var(--accent)}.review-name{font-size:13px;font-weight:600;color:#d4d4d8}.review-stars{font-size:12px;letter-spacing:1px}.review-text{font-size:13px;color:var(--muted);line-height:1.5}.review-date{font-size:11px;color:#3f3f46;margin-top:8px}.no-more-reviews{text-align:center;font-size:12px;color:#3f3f46;padding:12px 0;font-style:italic}
+.reviews-section{max-width:520px;margin:0 auto 48px}.review-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:12px}.review-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.review-user{display:flex;align-items:center;gap:10px}.review-avatar{width:28px;height:28px;border-radius:50%;background:rgba(139,92,246,0.15);display:grid;place-items:center;font-size:11px;font-weight:700;color:var(--accent)}.review-name{font-size:13px;font-weight:600;color:#d4d4d8}.review-stars{font-size:12px;letter-spacing:1px}.review-text{font-size:13px;color:var(--muted);line-height:1.5}.review-date{font-size:11px;color:#3f3f46;margin-top:8px}.no-more-reviews{text-align:center;font-size:12px;color:#3f3f46;padding:12px 0;font-style:italic}
+.btn-see-all{display:block;width:100%;padding:10px;font-size:12px;font-weight:600;color:var(--accent);background:transparent;border:1px solid rgba(139,92,246,0.2);border-radius:8px;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .2s;margin-top:4px}.btn-see-all:hover{background:rgba(139,92,246,0.05);border-color:rgba(139,92,246,0.4)}
 .faq-section{max-width:520px;margin:0 auto 56px}.section-label{font-size:20px;font-weight:700;letter-spacing:-0.5px;text-align:center;margin-bottom:20px}.faq-item{border-bottom:1px solid var(--border);padding:14px 0}.faq-item:first-child{border-top:1px solid var(--border)}.faq-q-text{font-size:13px;font-weight:600;color:#fff;margin-bottom:6px}.faq-a-text{font-size:13px;color:var(--muted);line-height:1.6}
-.account-wrap{max-width:500px;margin:0 auto;padding:40px 0 56px}.account-title{font-size:22px;font-weight:700;letter-spacing:-0.5px;text-align:center;margin-bottom:4px}.account-sub{text-align:center;font-size:13px;color:var(--muted);margin-bottom:28px}
-.purchase-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:12px}.purchase-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.purchase-product{font-size:14px;font-weight:600}.purchase-date{font-size:11px;color:var(--muted)}.purchase-key{font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--accent);background:rgba(139,92,246,0.08);padding:10px 14px;border-radius:8px;word-break:break-all;margin-bottom:10px}.purchase-copy{padding:6px 16px;font-size:11px;font-weight:600;color:#fff;background:var(--gradient);border:none;border-radius:6px;cursor:pointer;font-family:'Outfit',sans-serif}.purchase-copy:hover{opacity:0.9}
-.no-purchases{text-align:center;color:var(--muted);font-size:13px;padding:40px 0}
+.account-wrap{max-width:500px;margin:0 auto;padding:40px 0 56px}.account-title{font-size:22px;font-weight:700;letter-spacing:-0.5px;text-align:center;margin-bottom:4px}.account-sub{text-align:center;font-size:13px;color:var(--muted);margin-bottom:28px}.purchase-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:12px}.purchase-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.purchase-product{font-size:14px;font-weight:600}.purchase-date{font-size:11px;color:var(--muted)}.purchase-key{font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--accent);background:rgba(139,92,246,0.08);padding:10px 14px;border-radius:8px;word-break:break-all;margin-bottom:10px}.purchase-copy{padding:6px 16px;font-size:11px;font-weight:600;color:#fff;background:var(--gradient);border:none;border-radius:6px;cursor:pointer;font-family:'Outfit',sans-serif}.purchase-copy:hover{opacity:0.9}.no-purchases{text-align:center;color:var(--muted);font-size:13px;padding:40px 0}
 .saved-banner{max-width:440px;margin:0 auto 20px;padding:14px 18px;border-radius:10px;background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.15);display:none;text-align:center}.saved-banner.show{display:block}.saved-banner-title{font-size:13px;font-weight:600;color:#4ade80;margin-bottom:4px}.saved-banner-sub{font-size:11px;color:var(--muted)}.saved-banner-link{color:var(--accent);cursor:pointer;text-decoration:underline;font-weight:500}
 .checkout-wrap{max-width:500px;margin:0 auto;padding:40px 0 56px;overflow:visible}.checkout-title{font-size:22px;font-weight:700;letter-spacing:-0.5px;text-align:center;margin-bottom:4px}.checkout-sub{text-align:center;font-size:13px;color:var(--muted);margin-bottom:28px}.order-bar{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-radius:12px;background:var(--surface);border:1px solid var(--border);margin-bottom:24px}.order-info{display:flex;align-items:center;gap:12px}.order-mark{width:36px;height:36px;border-radius:8px;background:var(--gradient);display:grid;place-items:center;font:700 10px/1 'JetBrains Mono',monospace}.order-name{font-size:13px;font-weight:600}.order-detail{font-size:11px;color:var(--muted);margin-top:1px}.order-total{font-size:20px;font-weight:800;letter-spacing:-0.5px}.embed-frame{border-radius:12px;border:1px solid var(--border);margin-bottom:20px;overflow:hidden}.embed-frame>div{min-height:900px;width:100%}.embed-frame iframe{min-height:900px!important;height:auto!important;filter:invert(0.92) hue-rotate(180deg)}.secure-badge{text-align:center;font-size:11px;color:#52525b}
 .ty-wrap{max-width:480px;margin:0 auto;padding:60px 0;text-align:center}.ty-check{width:64px;height:64px;border-radius:50%;background:rgba(34,197,94,0.1);border:2px solid rgba(34,197,94,0.3);display:grid;place-items:center;margin:0 auto 20px;font-size:28px;animation:popIn .5s ease}@keyframes popIn{0%{transform:scale(0)}50%{transform:scale(1.2)}100%{transform:scale(1)}}.ty-title{font-size:28px;font-weight:800;letter-spacing:-1px;margin-bottom:6px}.ty-sub{font-size:14px;color:var(--muted);margin-bottom:32px}.key-box{background:rgba(139,92,246,0.06);border:1px solid rgba(139,92,246,0.2);border-radius:12px;padding:24px;margin-bottom:24px}.key-label{font-size:10px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}.key-value{font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:600;color:#fff;word-break:break-all;line-height:1.4;margin-bottom:14px}.btn-copy{padding:8px 20px;font-size:12px;font-weight:600;color:#fff;background:var(--gradient);border:none;border-radius:8px;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .2s}.btn-copy:hover{opacity:0.9}.ty-steps{text-align:left;margin-bottom:32px}.ty-step{display:flex;gap:12px;padding:10px 0;font-size:13px;color:#d4d4d8;line-height:1.5}.ty-num{width:22px;height:22px;border-radius:50%;flex-shrink:0;background:rgba(139,92,246,0.12);display:grid;place-items:center;font-size:11px;font-weight:700;color:var(--accent);margin-top:1px}
@@ -38,16 +35,8 @@ footer{border-top:1px solid var(--border);padding:20px 0;text-align:center;font-
 <body>
 <div class="glow glow-1"></div><div class="glow glow-2"></div>
 <div class="wrap">
-
-  <!-- LANDING -->
   <div id="landing" class="view active">
-    <nav>
-      <a class="logo" onclick="showLanding()"><div class="logo-mark">UE</div><span class="logo-text">Unnamed</span></a>
-      <div class="nav-links">
-        <a class="nav-link" onclick="document.getElementById('product').scrollIntoView({behavior:'smooth'})"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Product</a>
-        <a class="nav-link" onclick="showAccount()"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Account</a>
-      </div>
-    </nav>
+    <nav><a class="logo" onclick="showLanding()"><div class="logo-mark">UE</div><span class="logo-text">Unnamed</span></a><div class="nav-links"><a class="nav-link" onclick="document.getElementById('product').scrollIntoView({behavior:'smooth'})"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Product</a><a class="nav-link" onclick="showAccount()"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Account</a></div></nav>
     <section class="hero"><div class="status-pill"><span class="status-dot"></span> Keys delivered instantly</div><h1 class="hero-title">Unnamed<br><span class="accent">Enhancements</span></h1><p class="hero-sub">The ultimate script for Da Hood, Rivals & Wild West. One key, lifetime access.</p></section>
     <div class="features"><div class="feat"><span class="feat-icon">⚡</span><span class="feat-label">Instant Execution</span><span class="feat-desc">Zero-lag performance</span></div><div class="feat"><span class="feat-icon">🛡️</span><span class="feat-label">Undetected</span><span class="feat-desc">Anti-detection 24/7</span></div><div class="feat"><span class="feat-icon">🔄</span><span class="feat-label">Auto Updates</span><span class="feat-desc">Always latest version</span></div><div class="feat"><span class="feat-icon">🎯</span><span class="feat-label">Full Suite</span><span class="feat-desc">Aim, ESP, farm & more</span></div><div class="feat"><span class="feat-icon">🔑</span><span class="feat-label">HWID Locked</span><span class="feat-desc">Secure key binding</span></div><div class="feat"><span class="feat-icon">💬</span><span class="feat-label">Live Support</span><span class="feat-desc">Discord community</span></div></div>
     <div class="saved-banner" id="savedBanner"><div class="saved-banner-title">You already purchased a key</div><div class="saved-banner-sub"><span class="saved-banner-link" onclick="showAccount()">View in Account →</span></div></div>
@@ -63,12 +52,21 @@ footer{border-top:1px solid var(--border);padding:20px 0;text-align:center;font-
       <div class="card-footer">🔒 Card · Apple Pay · Cash App & more</div>
     </div></div></div>
     <div class="steps"><div class="step"><div class="step-n">01</div><div class="step-t">Purchase</div><div class="step-d">Card or Cash App</div></div><div class="step"><div class="step-n">02</div><div class="step-t">Pay</div><div class="step-d">Secure checkout</div></div><div class="step"><div class="step-n">03</div><div class="step-t">Receive</div><div class="step-d">Key delivered instantly</div></div><div class="step"><div class="step-n">04</div><div class="step-t">Redeem</div><div class="step-d">UE Discord server</div></div></div>
+
+    <!-- REVIEWS - rendered by JS -->
     <div class="reviews-section" id="reviews">
       <h2 class="section-label">Reviews</h2>
-      <div class="review-card"><div class="review-header"><div class="review-user"><div class="review-avatar">1</div><div class="review-name">User 1</div></div><div class="review-stars">⭐⭐⭐⭐⭐</div></div><div class="review-text">works good no issues</div><div class="review-date">3 days ago</div></div>
-      <div class="review-card"><div class="review-header"><div class="review-user"><div class="review-avatar">2</div><div class="review-name">User 2</div></div><div class="review-stars">⭐⭐⭐⭐⭐</div></div><div class="review-text">+rep legit</div><div class="review-date">5 days ago</div></div>
-      <div class="no-more-reviews">No other reviews have been made yet</div>
+      <div id="reviewsPreview"></div>
+      <button class="btn-see-all" id="seeAllBtn" onclick="showAllReviews()" style="display:none">See all reviews</button>
     </div>
+
+    <!-- ALL REVIEWS (hidden, shown on click) -->
+    <div class="reviews-section" id="allReviewsSection" style="display:none">
+      <h2 class="section-label">All Reviews</h2>
+      <div id="allReviewsList"></div>
+      <button class="btn-see-all" onclick="hideAllReviews()">Back to preview</button>
+    </div>
+
     <div class="faq-section" id="faq">
       <h2 class="section-label">FAQ</h2>
       <div class="faq-item"><div class="faq-q-text">How do I receive my key?</div><div class="faq-a-text">Your key is delivered instantly after purchase — it appears on your screen right away.</div></div>
@@ -82,54 +80,123 @@ footer{border-top:1px solid var(--border);padding:20px 0;text-align:center;font-
     <footer><span>© 2026 Unnamed Enhancements</span></footer>
   </div>
 
-  <!-- CHECKOUT -->
   <div id="checkout" class="view">
     <nav><a class="logo" onclick="showLanding()"><div class="logo-mark">UE</div><span class="logo-text">Unnamed</span></a><a class="back-link" onclick="showLanding()">← Back</a></nav>
     <div class="checkout-wrap"><h2 class="checkout-title">Checkout</h2><p class="checkout-sub">Complete your purchase to receive your key</p><div class="order-bar"><div class="order-info"><div class="order-mark">UE</div><div><div class="order-name">Unnamed Enhancements</div><div class="order-detail">Lifetime · All games · All features</div></div></div><div class="order-total">$20</div></div><div class="embed-frame"><div data-whop-checkout-plan-id="plan_S7iqLGFC49P6H" data-whop-checkout-return-url="https://uescript.github.io/Unnamed-enhancements/?status=success"></div></div><div class="secure-badge">🔒 Secured by Whop · Card, Apple Pay, Cash App & more</div></div>
   </div>
 
-  <!-- THANK YOU -->
   <div id="thankyou" class="view">
     <nav><a class="logo" onclick="showLanding()"><div class="logo-mark">UE</div><span class="logo-text">Unnamed</span></a></nav>
     <div class="ty-wrap"><div class="ty-check">✓</div><h1 class="ty-title">Purchase Complete!</h1><p class="ty-sub">Thank you for your purchase. Here's your key:</p>
       <div class="key-box"><div class="key-label">Your Key</div><div class="key-value" id="keyDisplay"></div><button class="btn-copy" onclick="copyKey()">Copy Key</button></div>
       <div class="ty-steps"><div class="ty-step"><span class="ty-num">1</span><span>Copy your key above</span></div><div class="ty-step"><span class="ty-num">2</span><span>Join the <a href="https://discord.gg/enhancements" target="_blank" rel="noopener" style="color:var(--accent)">Unnamed Enhancements Discord</a></span></div><div class="ty-step"><span class="ty-num">3</span><span>Click on <strong>"Get Script"</strong> and paste your key</span></div><div class="ty-step"><span class="ty-num">4</span><span>Copy the script into your executor (Yub-X, Volt, Cosmic, Madium, etc.)</span></div><div class="ty-step"><span class="ty-num">5</span><span>Run the script and enjoy!</span></div></div>
-      <div class="ty-review-box"><div class="ty-review-title">Enjoying it? Leave a review!</div><div class="ty-review-sub">Your feedback helps others find us</div><div class="ty-stars"><span class="ty-star" onclick="setRating(1)">⭐</span><span class="ty-star" onclick="setRating(2)">⭐</span><span class="ty-star" onclick="setRating(3)">⭐</span><span class="ty-star" onclick="setRating(4)">⭐</span><span class="ty-star" onclick="setRating(5)">⭐</span></div><textarea class="ty-review-input" id="tyReviewText" placeholder="What do you think of Unnamed Enhancements?"></textarea><button class="btn-ty-review" onclick="submitReview()">Submit Review</button><div class="ty-review-thanks" id="tyReviewThanks">🎉 Thanks for the review!</div></div>
+      <div class="ty-review-box"><div class="ty-review-title">Enjoying it? Leave a review!</div><div class="ty-review-sub" id="tyReviewSub">Your feedback helps others find us</div><div class="ty-stars" id="tyStarsWrap"><span class="ty-star" onclick="setRating(1)">⭐</span><span class="ty-star" onclick="setRating(2)">⭐</span><span class="ty-star" onclick="setRating(3)">⭐</span><span class="ty-star" onclick="setRating(4)">⭐</span><span class="ty-star" onclick="setRating(5)">⭐</span></div><textarea class="ty-review-input" id="tyReviewText" placeholder="What do you think of Unnamed Enhancements?"></textarea><button class="btn-ty-review" id="tyReviewBtn" onclick="submitReview()">Submit Review</button><div class="ty-review-thanks" id="tyReviewThanks">🎉 Thanks for the review!</div></div>
     </div>
   </div>
 
-  <!-- ACCOUNT -->
   <div id="account" class="view">
     <nav><a class="logo" onclick="showLanding()"><div class="logo-mark">UE</div><span class="logo-text">Unnamed</span></a><a class="back-link" onclick="showLanding()">← Back</a></nav>
-    <div class="account-wrap">
-      <h2 class="account-title">Your Account</h2>
-      <p class="account-sub">Past purchases saved to this browser</p>
-      <div id="purchaseList"></div>
-    </div>
+    <div class="account-wrap"><h2 class="account-title">Your Account</h2><p class="account-sub">Past purchases saved to this browser</p><div id="purchaseList"></div></div>
   </div>
-
 </div>
+
 <script>
 const CONFIG={currentKey:"lSjMniAqBqoZdPqduGTVUOHSjVUkjRcY",stock:1,pricePerKey:20};
 let qty=1;
+
+// Default reviews (always shown)
+const DEFAULT_REVIEWS=[
+  {user:1,text:"works good no issues",rating:5,date:"3 days ago"},
+  {user:2,text:"+rep legit",rating:5,date:"5 days ago"}
+];
+
+// Get saved reviews from localStorage
+function getSavedReviews(){try{return JSON.parse(localStorage.getItem('ue_reviews')||'[]');}catch(e){return[];}}
+
+// Get all reviews combined
+function getAllReviews(){return [...DEFAULT_REVIEWS,...getSavedReviews()];}
+
+// Render a single review card
+function reviewHTML(r){
+  const stars='⭐'.repeat(r.rating||5);
+  const num=r.user;
+  return '<div class="review-card"><div class="review-header"><div class="review-user"><div class="review-avatar">'+num+'</div><div class="review-name">User '+num+'</div></div><div class="review-stars">'+stars+'</div></div><div class="review-text">'+r.text+'</div><div class="review-date">'+r.date+'</div></div>';
+}
+
+// Render reviews on landing page
+function renderReviews(){
+  const all=getAllReviews();
+  const preview=document.getElementById('reviewsPreview');
+  const btn=document.getElementById('seeAllBtn');
+  // Show first 2
+  preview.innerHTML=all.slice(0,2).map(reviewHTML).join('');
+  if(all.length>2){
+    btn.style.display='block';
+    btn.textContent='See all reviews ('+all.length+')';
+  } else {
+    btn.style.display='none';
+    preview.innerHTML+=('<div class="no-more-reviews">No other reviews have been made yet</div>');
+  }
+}
+
+function showAllReviews(){
+  const all=getAllReviews();
+  document.getElementById('allReviewsList').innerHTML=all.map(reviewHTML).join('')+'<div class="no-more-reviews">Showing all '+all.length+' reviews</div>';
+  document.getElementById('reviews').style.display='none';
+  document.getElementById('allReviewsSection').style.display='block';
+}
+
+function hideAllReviews(){
+  document.getElementById('reviews').style.display='block';
+  document.getElementById('allReviewsSection').style.display='none';
+}
+
+// Submit review from thank you page
+let currentRating=0;
+function setRating(n){currentRating=n;document.querySelectorAll('.ty-star').forEach((s,i)=>{s.classList.toggle('active',i<n);});}
+
+function submitReview(){
+  const text=document.getElementById('tyReviewText').value.trim();
+  if(!text||currentRating===0)return;
+  const saved=getSavedReviews();
+  const userNum=DEFAULT_REVIEWS.length+saved.length+1;
+  const now=new Date();
+  const dateStr=now.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+  saved.push({user:userNum,text:text,rating:currentRating,date:dateStr});
+  localStorage.setItem('ue_reviews',JSON.stringify(saved));
+  document.getElementById('tyReviewBtn').style.display='none';
+  document.getElementById('tyReviewText').style.display='none';
+  document.getElementById('tyStarsWrap').style.display='none';
+  document.getElementById('tyReviewSub').style.display='none';
+  document.getElementById('tyReviewThanks').style.display='block';
+}
+
+// Stock
 function updateStock(){const b=document.getElementById('stockBadge'),t=document.getElementById('stockText');if(CONFIG.stock>0){b.className='stock-badge stock-in';t.textContent=CONFIG.stock+' in stock';}else{b.className='stock-badge stock-out';t.textContent='Out of stock';}updateQtyUI();}
 function changeQty(d){qty=Math.max(1,qty+d);updateQtyUI();}
 function updateQtyUI(){document.getElementById('qtyVal').textContent=qty;document.getElementById('qtyMinus').disabled=qty<=1;document.getElementById('qtyPlus').disabled=qty>=99;const total=qty*CONFIG.pricePerKey;document.getElementById('totalPrice').textContent='$'+total;document.getElementById('buyBtn').textContent='Buy Now — $'+total;const err=document.getElementById('stockError'),btn=document.getElementById('buyBtn');if(qty>CONFIG.stock||CONFIG.stock===0){err.style.display='block';err.textContent=CONFIG.stock===0?'Out of stock — check back soon':'Not enough keys in stock (only '+CONFIG.stock+' available)';btn.disabled=true;}else{err.style.display='none';btn.disabled=false;}}
 updateStock();
+
+// Purchases
 function getPurchases(){try{return JSON.parse(localStorage.getItem('ue_purchases')||'[]');}catch(e){return[];}}
 function savePurchase(key){const p=getPurchases();if(!p.find(x=>x.key===key)){p.push({key:key,product:'Unnamed Enhancements',date:new Date().toISOString()});localStorage.setItem('ue_purchases',JSON.stringify(p));}}
 if(getPurchases().length>0){document.getElementById('savedBanner').classList.add('show');}
+
+// Purchase return
 const urlParams=new URLSearchParams(window.location.search);
 if(urlParams.get('status')==='success'){document.getElementById('landing').classList.remove('active');document.getElementById('thankyou').classList.add('active');document.getElementById('keyDisplay').textContent=CONFIG.currentKey;savePurchase(CONFIG.currentKey);}
+
+// Navigation
 function hideAll(){['landing','checkout','thankyou','account'].forEach(id=>{document.getElementById(id).classList.remove('active');});}
 function showCheckout(){if(qty>CONFIG.stock)return;hideAll();document.getElementById('checkout').classList.add('active');window.scrollTo({top:0,behavior:'instant'});}
-function showLanding(){hideAll();document.getElementById('landing').classList.add('active');window.scrollTo({top:0,behavior:'instant'});history.replaceState(null,'',window.location.pathname);}
+function showLanding(){hideAll();document.getElementById('landing').classList.add('active');window.scrollTo({top:0,behavior:'instant'});history.replaceState(null,'',window.location.pathname);renderReviews();}
 function showAccount(){hideAll();document.getElementById('account').classList.add('active');renderPurchases();window.scrollTo({top:0,behavior:'instant'});}
 function renderPurchases(){const list=document.getElementById('purchaseList');const purchases=getPurchases();if(purchases.length===0){list.innerHTML='<div class="no-purchases">No purchases yet. Buy a key and it will appear here.</div>';return;}list.innerHTML=purchases.slice().reverse().map(p=>{const d=new Date(p.date);const dateStr=d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})+' at '+d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});return '<div class="purchase-card"><div class="purchase-header"><div class="purchase-product">'+p.product+'</div><div class="purchase-date">'+dateStr+'</div></div><div class="purchase-key">'+p.key+'</div><button class="purchase-copy" onclick="copyPurchaseKey(\''+p.key+'\',this)">Copy Key</button></div>';}).join('');}
 function copyPurchaseKey(key,btn){navigator.clipboard.writeText(key).then(()=>{btn.textContent='Copied!';setTimeout(()=>btn.textContent='Copy Key',2000);});}
 function copyKey(){const k=document.getElementById('keyDisplay').textContent;navigator.clipboard.writeText(k).then(()=>{const btn=document.querySelector('.btn-copy');btn.textContent='Copied!';setTimeout(()=>btn.textContent='Copy Key',2000);});}
-let currentRating=0;function setRating(n){currentRating=n;document.querySelectorAll('.ty-star').forEach((s,i)=>{s.classList.toggle('active',i<n);});}
-function submitReview(){document.querySelector('.btn-ty-review').style.display='none';document.querySelector('.ty-review-input').style.display='none';document.querySelector('.ty-stars').style.display='none';document.querySelector('.ty-review-sub').style.display='none';document.getElementById('tyReviewThanks').style.display='block';}
+
+// Init reviews
+renderReviews();
 </script>
 </body>
 </html>
