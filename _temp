@@ -1,1 +1,1 @@
-.products-grid{display:grid;grid-template-columns:1fr 280px;gap:16px;margin:0 auto 48px;max-width:760px;align-items:stretch}
+/* patch */
